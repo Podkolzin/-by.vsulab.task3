@@ -11,6 +11,9 @@ public class Certificate {
         this.nameOrganization = nameOrganization;
     }
 
+    public Certificate() {
+    }
+
     public int getNumber() {
         return number;
     }

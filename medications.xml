@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <medications xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns="http://www.example.org/medications" xsi:schemaLocation="http://www.example.org/medications medications.xsd">
-    <medication id="">
+    <medication id="a&amp;1">
     <name>aspirin</name>
     <pharm>Bayer</pharm>
     <medicationGroup>ANTIBIOTIC</medicationGroup>
@@ -20,7 +20,7 @@
     <dosage>20</dosage>
     <frequencyOfUse>12</frequencyOfUse>
 </medication>
-    <medication id="">
+    <medication id="a&amp;2">
         <name>Viagra</name>
         <pharm>Pfizer</pharm>
         <medicationGroup>VITAMIN</medicationGroup>

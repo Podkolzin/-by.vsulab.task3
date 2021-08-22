@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Medication {
+
+    private String identity;
     private String name;
     private String pharm;
     private MedicationGroup medicationGroup;
@@ -14,7 +16,8 @@ public class Medication {
     private int dosage;
     private int frequencyOfUse;
 
-    public Medication(String name, String pharm, MedicationGroup medicationGroup, List<String> analogs, Versions versions, Certificate certificate, Package aPackage, int dosage, int frequencyOfUse) {
+    public Medication(String identity, String name, String pharm, MedicationGroup medicationGroup, List<String> analogs, Versions versions, Certificate certificate, Package aPackage, int dosage, int frequencyOfUse) {
+        this.identity = identity;
         this.name = name;
         this.pharm = pharm;
         this.medicationGroup = medicationGroup;
@@ -28,6 +31,17 @@ public class Medication {
 
     public Medication(String name) {
         this.name = name;
+    }
+
+    public Medication() {
+    }
+
+    public String getIdentity() {
+        return identity;
+    }
+
+    public void setIdentity(String identity) {
+        this.identity = identity;
     }
 
     public String getName() {

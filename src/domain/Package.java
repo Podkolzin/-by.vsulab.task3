@@ -11,6 +11,9 @@ public class Package {
         this.price = price;
     }
 
+    public Package() {
+    }
+
     public String getTypePackage() {
         return typePackage;
     }
