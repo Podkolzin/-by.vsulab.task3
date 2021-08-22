@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<medications xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.example.org/medications" xsi:schemaLocation="http://www.example.org/medications medications.xsd">
+    <medication id="">
+    <name>aspirin</name>
+    <pharm>Bayer</pharm>
+    <medicationGroup>ANTIBIOTIC</medicationGroup>
+    <analogs>Кетонал</analogs>
+    <versions>PILLS</versions>
+    <certificate>
+        <number>1</number>
+        <date>23052020</date>
+        <nameOrganization>"MINSKGAS"</nameOrganization>
+    </certificate>
+    <aPackage>
+        <typePackage>Box</typePackage>
+        <countMedication>20</countMedication>
+        <price>15</price>
+    </aPackage>
+    <dosage>20</dosage>
+    <frequencyOfUse>12</frequencyOfUse>
+</medication>
+    <medication id="">
+        <name>Viagra</name>
+        <pharm>Pfizer</pharm>
+        <medicationGroup>VITAMIN</medicationGroup>
+        <analogs>Нет</analogs>
+        <versions>PILLS</versions>
+        <certificate>
+            <number>2</number>
+            <date>28052021</date>
+            <nameOrganization>"MINSKFARM"</nameOrganization>
+        </certificate>
+        <aPackage>
+            <typePackage>Box</typePackage>
+            <countMedication>10</countMedication>
+            <price>35</price>
+        </aPackage>
+        <dosage>15</dosage>
+        <frequencyOfUse>4</frequencyOfUse>
+    </medication>
+
+
+
+
+
+</medications>

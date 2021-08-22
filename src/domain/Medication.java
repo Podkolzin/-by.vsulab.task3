@@ -1,19 +1,20 @@
 package domain;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Medication {
     private String name;
     private String pharm;
     private MedicationGroup medicationGroup;
-    private ArrayList<String> analogs = new ArrayList<>();
+    private List<String> analogs = new ArrayList<>();
     private Versions versions;
     private Certificate certificate;
     private Package aPackage;
     private int dosage;
     private int frequencyOfUse;
 
-    public Medication(String name, String pharm, MedicationGroup medicationGroup, ArrayList<String> analogs, Versions versions, Certificate certificate, Package aPackage, int dosage, int frequencyOfUse) {
+    public Medication(String name, String pharm, MedicationGroup medicationGroup, List<String> analogs, Versions versions, Certificate certificate, Package aPackage, int dosage, int frequencyOfUse) {
         this.name = name;
         this.pharm = pharm;
         this.medicationGroup = medicationGroup;
@@ -53,11 +54,11 @@ public class Medication {
         this.medicationGroup = medicationGroup;
     }
 
-    public ArrayList<String> getAnalogs() {
+    public List<String> getAnalogs() {
         return analogs;
     }
 
-    public void setAnalogs(ArrayList<String> analogs) {
+    public void setAnalogs(List<String> analogs) {
         this.analogs = analogs;
     }
 

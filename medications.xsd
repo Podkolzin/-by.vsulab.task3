@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/medications"
+        xmlns:tns="http://www.example.org/medications" elementFormDefault="qualified">
+    <element name="medications">
+        <complexType>
+            <sequence>
+                <element name="medication" maxOccurs="unbounded">
+                    <complexType>
+                        <sequence>
+                            <element name="name" type="string"/>
+                            <element name="pharm" type="string"/>
+                            <element name="medicationGroup">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <enumeration value="ANTIBIOTIC" />
+                                        <enumeration value="PAINRELIEVER"/>
+                                        <enumeration value="VITAMIN"/>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="analogs">
+                                <simpleType>
+                                    <list itemType="string" />
+                                </simpleType>
+                            </element>
+                            <element name="versions">
+                            <simpleType>
+                                <restriction base="string">
+                                    <enumeration value="PILLS" />
+                                    <enumeration value="CAPSULES" />
+                                    <enumeration value="POWDER" />
+                                    <enumeration value="DROPS" />
+                                </restriction>
+                            </simpleType>
+                            </element>
+                            <element name="certificate">
+                                <complexType>
+                                    <sequence>
+                                        <element name="number" type="positiveInteger" />
+                                        <element name="date" type="string"/>
+                                        <element name="nameOrganization" type="string"/>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                            <element name="aPackage">
+                                <complexType>
+                                    <sequence>
+                                        <element name="typePackage" type="string"/>
+                                        <element name="countMedication" type="positiveInteger"/>
+                                        <element name="price" type="positiveInteger"/>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                            <element name="dosage" type="positiveInteger"/>
+                            <element name="frequencyOfUse" type="positiveInteger"/>
+                        </sequence>
+                        <attribute name="id" type="string" use="required" />
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
