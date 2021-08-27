@@ -1,9 +1,12 @@
 package domain;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
-public class Medication {
+public class Medication implements Comparator<Medication> {
+
+
 
     private String identity;
     private String name;
@@ -108,7 +111,7 @@ public class Medication {
         this.dosage = dosage;
     }
 
-    public int getFrequencyOfUse() {
+    public Integer getFrequencyOfUse() {
         return frequencyOfUse;
     }
 
@@ -135,4 +138,16 @@ public class Medication {
         return builder.toString();
 
     }
+
+    public boolean equals (Medication medication){
+        return (this == medication);
+    }
+
+        public int compare(Medication o1, Medication o2) {
+            return o1.getFrequencyOfUse().compareTo(o2.getFrequencyOfUse());
+        }
+
+
+
+
 }
